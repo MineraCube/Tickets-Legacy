@@ -51,14 +51,14 @@ public class TicketListGUI {
 		
 		itemID = new HashMap<ListWidgetItem, Integer>();
 		
-		if (who.equals("None")) {
-			who = "New";
+		if (who.equals("Brak")) {
+			who = "Nowych";
 		} else if (who.equals("")) {
-			who = "All";
+			who = "Wszystkich";
 		}
 		
 		title = new GenericLabel();
-		title.setText(ChatColor.GREEN + "You are viewing: " + ChatColor.YELLOW + who + ChatColor.GREEN + " tickets");
+		title.setText(ChatColor.GREEN + "Przegladanie: " + ChatColor.YELLOW + who + ChatColor.GREEN + " zgloszen");
 		title.setX(155);
 		title.setY(5);
 		title.setWidth(70);
@@ -69,38 +69,38 @@ public class TicketListGUI {
 		 */
 		// Buttons Calculated with: (198-10)/3 = Width
 		closeTicket = new GenericButton();
-		closeTicket.setText("Close");
+		closeTicket.setText("Zamknij");
 		closeTicket.setX(10);
 		closeTicket.setY(190);
 		closeTicket.setHeight(20);
 		closeTicket.setWidth(62);
 		
 		openselect = new GenericButton();
-		openselect.setText("Select");
+		openselect.setText("Wybierz");
 		openselect.setX(77);
 		openselect.setY(190);
 		openselect.setHeight(20);
 		openselect.setWidth(62);
 		
 		opendelete = new GenericButton();
-		opendelete.setText("Delete");
+		opendelete.setText("Usun");
 		opendelete.setX(144);
 		opendelete.setY(190);
 		opendelete.setHeight(20);
 		opendelete.setWidth(62);
 		
 		closeTicket.setEnabled(true);
-		closeTicket.setTooltip("There are no tickets to close");
+		closeTicket.setTooltip("Nie ma zadnych zgloszen do zamkniecia");
 		
 		openselect.setEnabled(true);
-		openselect.setTooltip("There are not tickets to select");
+		openselect.setTooltip("Nie ma zadnych zgloszen do wybrania");
 		
 		opendelete.setEnabled(true);
-		opendelete.setTooltip("There are no tickets to delete");
+		opendelete.setTooltip("Nie ma zadnych zgloszen do usuniecia");
 		// End of buttons
 		
 		openListLabel = new GenericLabel();
-		openListLabel.setText("There are: " + ChatColor.GREEN + "0" + ChatColor.WHITE + " open tickets");
+		openListLabel.setText("Przegladanie: " + ChatColor.GREEN + "0" + ChatColor.WHITE + " otwartych zgloszen");
 		openListLabel.setX(10);
 		openListLabel.setY(20);
 		openListLabel.setWidth(70);
@@ -121,28 +121,28 @@ public class TicketListGUI {
 		 */
 		// Buttons Calculated with: (198-10)/3 = Width
 		openTicket = new GenericButton();
-		openTicket.setText("Open");
+		openTicket.setText("Otworz");
 		openTicket.setX(218);
 		openTicket.setY(190);
 		openTicket.setHeight(20);
 		openTicket.setWidth(62);
 		
 		closeselect = new GenericButton();
-		closeselect.setText("Select");
+		closeselect.setText("Wybierz");
 		closeselect.setX(285);
 		closeselect.setY(190);
 		closeselect.setHeight(20);
 		closeselect.setWidth(62);
 		
 		closedelete = new GenericButton();
-		closedelete.setText("Delete");
+		closedelete.setText("Usun");
 		closedelete.setX(352);
 		closedelete.setY(190);
 		closedelete.setHeight(20);
 		closedelete.setWidth(62);
 		
 		openTicket.setEnabled(true);
-		openTicket.setTooltip("Opens the selected ticket");
+		openTicket.setTooltip("Otworz wybrane zgloszenie");
 		
 		closeselect.setEnabled(true);
 		closeselect.setTooltip("Views the selected ticket");
